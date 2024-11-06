@@ -1,0 +1,41 @@
+[project]
+name = "cli-template-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "taskipy>=1.14.0",
+]
+#dynamic = ["version"]
+
+[project.scripts]
+cli_template_python = "calc.cli:cli_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.3",
+    "mkdocs>=1.6.1",
+    "mkdocstrings-python>=1.12.2",
+    "mkdocstrings>=0.26.2",
+    "mkdocs-material>=9.5.43",
+    "jupyter>=1.1.1",
+    "jupyter-console>=6.6.3",
+    "notebook>=7.0.7",
+    "jupyterlab>=4.3.0",
+    "jupytext>=1.16.4",
+    "nteract-on-jupyter>=2.1.3",
+    "pytest-cov>=6.0.0",
+    "pytest-html>=4.1.1",
+]
+
+[tool.taskipy.tasks]
+test = { cmd = "python -m pytest --cov=src --cov-report=html", help = "run pytest" }
+add = { cmd = "python -m src.calc add 20 30", help = "run add" }
+mul = { cmd = "python -m src.calc mul 20 30", help = "run mul" }
+version = { cmd = "python -m src.calc --version", help = "run version" }
+help = { cmd = "python -m src.calc --help", help = "run calc" }
+lint = { cmd = "uvx ruff check", help = "run linter" }

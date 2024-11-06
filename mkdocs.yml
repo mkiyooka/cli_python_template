@@ -1,0 +1,34 @@
+site_name: My Docs
+
+theme:
+    name: "material"
+    favicon: images/peanut.png
+    features:
+        - content.code.copy
+        - content.code.annotate
+        - content.code.select
+
+markdown_extensions:
+    - pymdownx.highlight:
+        anchor_linenums: true
+        line_spans: __span
+        linenums: true
+        pygments_lang_class: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+
+plugins:
+    - search
+    - mkdocstrings:
+        handlers:
+            python:
+                options:
+                    show_source: true
+                    show_root_heading: true
+
+nav:
+    - Home: index.md
+    - Code Reference:
+        - Code1: functions.md
+        - Test: test.md
