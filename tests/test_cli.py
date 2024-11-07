@@ -1,4 +1,4 @@
-from src.calc import cli
+from src.calc1 import cli
 
 
 def test_create_parser(capfd):

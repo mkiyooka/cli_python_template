@@ -1,5 +1,6 @@
 # Python-generated files
 __pycache__/
+__pypackages__/
 *.py[oc]
 build/
 dist/
@@ -9,10 +10,18 @@ wheels/
 # Virtual environments
 .venv
 
-# pytest output
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# test & lint
 .coverage
 htmlcov/
+.mypy_cache/
+.ruff_cache/
 
 # MkDocs output
 assets/
 site/
+
+# setuptools-scm
+_version.py

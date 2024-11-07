@@ -19,7 +19,7 @@ def add(lhs: int | float, rhs: int | float) -> int | float:
     return lhs + rhs
 
 
-def sub(lhs: int | float, rhs: int | float):
+def sub(lhs: int | float, rhs: int | float) -> int | float:
     """減算関数
 
     減算を行う関数。
@@ -30,6 +30,12 @@ def sub(lhs: int | float, rhs: int | float):
 
     Returns:
         (int|float): lhs から rhs を減算した差
+
+    Examples:
+            関数の使い方
+
+            >>> sub(2, 3)
+            -1
     """
     return lhs - rhs
 
@@ -45,6 +51,12 @@ def mul(lhs: int | float, rhs: int | float) -> int | float:
 
     Returns:
         num: lhs * rhs
+
+    Examples:
+            関数の使い方
+
+            >>> mul(2, 3)
+            6
     """
     return lhs * rhs
 
@@ -59,6 +71,12 @@ def div(lhs: int | float, rhs: int | float) -> int | float:
         rhs (int | float): 右辺
 
     Returns:
-        int | float: lhsをrhsによる商
+        int | float: lhsをrhsによる `//` による商。
+
+    Examples:
+            関数の使い方
+
+            >>> div(2, 3)
+            0
     """
     return lhs // rhs

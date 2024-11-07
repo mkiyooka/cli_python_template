@@ -1,4 +1,4 @@
-from src.calc import arithmetic_ops
+from common import arithmetic_ops
 
 
 def test_add():

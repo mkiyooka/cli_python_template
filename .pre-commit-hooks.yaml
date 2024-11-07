@@ -1,6 +1,0 @@
-- id: ruff
-  name: ruff
-  language: python
-  entry: ruff check --force-exclude
-  args: []
-  types_or: [python, pyi]
