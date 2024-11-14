@@ -129,7 +129,7 @@ wheels = [
 
 [[package]]
 name = "cli-template-python"
-version = "0.0.post1.dev2"
+version = "0.0.post1.dev3"
 source = { editable = "." }
 dependencies = [
     { name = "flet" },
@@ -141,6 +141,7 @@ dependencies = [
 [package.dependency-groups]
 dev = [
     { name = "coverage" },
+    { name = "flet" },
     { name = "mkdocs" },
     { name = "mkdocs-material" },
     { name = "mkdocstrings" },
@@ -162,6 +163,7 @@ requires-dist = [
 [package.metadata.dependency-groups]
 dev = [
     { name = "coverage", extras = ["toml"], specifier = ">=7.6.4" },
+    { name = "flet", specifier = ">=0.24.1" },
     { name = "mkdocs", specifier = ">=1.6.1" },
     { name = "mkdocs-material", specifier = ">=9.5.43" },
     { name = "mkdocstrings", specifier = ">=0.26.2" },

@@ -17,15 +17,16 @@ requires = ["setuptools>=64", "setuptools_scm>=8"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools_scm]
-write_to = "src/calc1/_version.py"
+write_to = "src/_version.py"
 #version_scheme = "post-release"
 version_scheme = "no-guess-dev"
 local_scheme = "no-local-version"
 
 [project.scripts]
-calc1 = "calc1.cli:main_cli"
-calc2 = "calc2.cli:main_cli"
-calc3 = "calc3.cli:main_cli"
+typer1 = "cli_app_typer1.cli:main_cli"
+jsonap1 = "cli_app_jsonargparse1.cli:main_cli"
+ap1 = "cli_app_argparse1.cli:main_cli"
+flet1 = "web_app_flet1.script:main"
 
 [tool.hatch.build.targets.wheel]
 packages = [ "src" ]
