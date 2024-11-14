@@ -6,6 +6,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "flet>=0.24.1",
     "jsonargparse[ruyaml,signatures]>=4.34.0",
     "taskipy>=1.14.0",
     "typer[all]>=0.13.0",
